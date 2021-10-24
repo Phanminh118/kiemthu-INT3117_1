@@ -1,7 +1,7 @@
 void giamgia(String rank, double totalOrder) {
    switch (rank) {
      case 'vang' : {
-        if (totalOrder <= 0) {
+        if (totalOrder < 0) {
           print("$rank   TotalOrder: ${totalOrder.floor()}");
           print("Không hợp lệ");
           print("---------------------------------");
@@ -25,7 +25,7 @@ void giamgia(String rank, double totalOrder) {
          break;
      }
      case 'bac' :{
-         if (totalOrder <= 0) {
+         if (totalOrder < 0) {
           print("$rank   TotalOrder: ${totalOrder.floor()}");
           print("Không hợp lệ");
           print("---------------------------------");
@@ -49,7 +49,7 @@ void giamgia(String rank, double totalOrder) {
          break;
      }
      default : {
-        if (totalOrder <= 0) {
+        if (totalOrder < 0) {
           print("$rank   TotalOrder: ${totalOrder.floor()}");
           print("Không hợp lệ");
           print("---------------------------------");
